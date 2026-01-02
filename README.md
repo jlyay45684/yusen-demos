@@ -25,3 +25,5 @@ npm run preview
 Notes:
 - `base: './'` in `vite.config.js` makes assets load correctly under `/repo/` on GitHub Pages.
 - `scripts/postbuild.js` generates `dist/404.html` for fallback.
+
+<!-- trigger redeploy -->
