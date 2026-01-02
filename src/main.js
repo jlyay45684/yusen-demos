@@ -29,14 +29,14 @@ function renderLayout(){
     el('nav', { class: 'nav', id: 'nav' }, []),
     el('div', { class: 'hr' }),
     el('div', { class: 'groupTitle' }, 'Ops'),
-    el('div', { class: 'small' }, [
-      '• Export 會下載 JSON（本機）。
-',
-      '• 狀態會寫入 localStorage（可重整保留）。
-',
-      '• 若要改成多頁（/ers.html 等），也可再分 entry。
-',
-    ])
+    el('div', {
+      class: 'small',
+      html: `
+        <div>• Export 會下載 JSON（本機）。</div>
+        <div>• 狀態會寫入 localStorage（可重整保留）。</div>
+        <div>• 若要改成多頁（/ers.html 等），也可再分 entry。</div>
+  `
+})
   ])
 
   const main = el('main', { class: 'main', id: 'main' }, [])
